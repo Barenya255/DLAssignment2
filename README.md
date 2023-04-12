@@ -5,6 +5,9 @@ Convolution Neural Networks.
 - user neeeds to make sure that all dependent and imported libraries are installed in the environment
 - colab does not provide wandb by default and hence a pip install is necessary.
 
+# Train.py has both codes for PARTA and PARTB
+
+
 # TO RUN TRAIN.PY
 
 - train.py has the command Line arguments version of the code. Running it with appropriate parameters will result in training the network from scratch, from a pretrained model, or from a model entirely trained that needs to be loaded.
@@ -18,10 +21,14 @@ Convolution Neural Networks.
 - The train.py will take care of whether to extract/ download. In case of a previous failed download, kindly deleted the failed attempt and run the code again.
 
 ## The Following are some example commandLine directives for running the train.py, user may copy paste the commands mentioned below
-- python train.py --log yes -lr 0.01 -b 64 -e 2 -wp Testing2 -we cs22m028 -f 1 -w_d 0.00001 -d 0.5 -k "5 3 3 3 3" -fs 64 -pre yes -bN no
 - python train.py --pretrain yes
 - python train.py --load scratch.pth
 - python train.py --log yes --pretrain yes
+- python train.py --log yes -lr 0.01 -b 64 -e 2 -wp Testing2 -we cs22m028 -f 1 -w_d 0.00001 -d 0.5 -k "5 3 3 3 3" -fs 64 -pre yes -bN no
+
+The last commandline will not give best results (non optimal), user requested to use other three commands to use default training parameters, or not change default parameters at all and use the --log, --pretrained and --load only.
+The last commandline is only given to prove the correct implementation of train.py
+
 
 ## To summarise the command Line arguments that can be passed to the train.py :
 - shorthand: '-lg', argument: '--log',             Desription: set to no if logging not desired, otherwise, wandb logging done. Prompt to insert key will appear                 
