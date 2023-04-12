@@ -11,7 +11,7 @@ Convolution Neural Networks.
 - The train.py downloads the dataset(4 GBs) and extract its. Therefore around 30GBs of free space is recommended.
 - The train.py will take care of whether to extract/ download. In case of a previous failed download, kindly deleted the failed attempt and run the code again.
 
-# The Following are some example commandLine directives for running the train.py, user may copy paste the commands mentioned below
+## The Following are some example commandLine directives for running the train.py, user may copy paste the commands mentioned below
 
 - python train.py --pretrain yes
 - python train.py --load scratch.pth
