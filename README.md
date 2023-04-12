@@ -1,5 +1,10 @@
 # DLAssignment2
 Convolution Neural Networks.
+
+# For Notebooks of PARTA and PARTB
+- user neeeds to make sure that all dependent and imported libraries are installed in the environment
+- colab does not provide wandb by default and hence a pip install is necessary.
+
 # TO RUN TRAIN.PY
 
 - train.py has the command Line arguments version of the code. Running it with appropriate parameters will result in training the network from scratch, from a pretrained model, or from a model entirely trained that needs to be loaded.
