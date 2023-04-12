@@ -25,7 +25,7 @@ parser.add_argument('-ld', '--load', type = str, default = "NIL", help = "enter 
 parser.add_argument('-wp', '--wandb_project', type = str, default = "DLAssignment2", help = "Default has been set to my project name. Please change as per required")
 parser.add_argument('-we', '--wandb_entity', type = str, default = "cs22m028")
 parser.add_argument('-e', '--epochs',type = int, default = 20)
-parser.add_argument('-b', '--batch_size',type = int, default = 32)
+parser.add_argument('-b', '--batchSize',type = int, default = 32)
 parser.add_argument('-f', '--factor',type = int, default = 2)
 parser.add_argument('-lr', '--learningRate', type = float, default = 1e-4)
 parser.add_argument('-w_d', '--weight_decay', type = float, default = 0)
