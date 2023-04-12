@@ -37,4 +37,5 @@ Convolution Neural Networks.
 
 ## Note:
 - all parameters except for wandb project/entity names are to be kept to lower case.
+- preTrained VisionTransformer model could not be added to the GitHub repository as it is huge (> 700 MBs)
 
