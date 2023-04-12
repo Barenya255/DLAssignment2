@@ -17,5 +17,21 @@ Convolution Neural Networks.
 - python train.py --load scratch.pth
 - python train.py --log yes --pretrain yes
 
-# To summarise the command Line arguments that can be passed to the train.py :
-- 
+## To summarise the command Line arguments that can be passed to the train.py :
+- shorthand: '-lg', argument: '--log', type = str, default = "no"
+- shorthand: '-ld', argument: '--load', type = str, default = "NIL", help = "enter name of model to load into and place the model in the same directory."
+- shorthand: '-wp', argument: '--wandb_project', type = str, default = "DLAssignment2", help = "Default has been set to my project name. Please change as per required"
+- shorthand: '-we', argument: '--wandb_entity', type = str, default = "cs22m028"
+- shorthand: '-e',, argument:'--epochs',type = int, default = 20
+- shorthand: '-b',, argument:'--batch_size',type = int, default = 32
+- shorthand: '-f',, argument:'--factor',type = int, default = 2
+- shorthand: '-lr', argument: '--learningRate', type = float, default = 1e-4
+- shorthand: '-w_d, argument:, '--weight_decay', type = float, default = 0
+- shorthand: '-d',, argument:'--dropOut', type = float, default = 0.5
+- shorthand: '-k',, argument:'--kernels', type = str, default = "5 5 3 3 3", help = "Enter 5 space separated integers")
+- shorthand: '-fs', argument: '--filterSize', type = int, default = 32, help = "Enter 5 space separated integers"
+- shorthand: '-a',, argument:'--activation', type = str, default = "mish", help = "can choose from only mish, silu, gelu and relu"
+- shorthand: '-pre, argument:, '--pretrained', type = str, default = "no", help = "train from scratch or from pretrained weights"
+- shorthand: '-aug, argument:, '--augmentation', type = str, default = "yes", help = " augment data or not"
+- shorthand: '-bN', argument: '--batchNorm', type = str, default = "yes", help = " augment data or not"
+
